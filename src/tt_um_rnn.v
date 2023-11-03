@@ -14,6 +14,7 @@ module tt_um_rnn (
 
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
+    assign uio_out[7:0] = 8'd0;
 
     // instantiate one lif neuron
     rnn rnn(.current(ui_in), .clk(clk), .rst_n(rst_n), .out(uo_out));
