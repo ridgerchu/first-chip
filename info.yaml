@@ -21,24 +21,20 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       "Jason Eshraghian"      # Your name
-  title:        "Leaky Integrate-and-Fire Neuron (Verilog Demo)"      # Project title
+  author:       "Ridger Zhu"      # Your name
+  title:        "RNN (Demo)"      # Project title
   language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "Implement a LIF neuron in silicon."      # Short description of what your project does
+  description:  "Count up to 10, one second at a time."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Apply an input current injection to the LIF neuron using switches.
-
-      This gets added to a membrane potential which is decayed over time.
-      If the membrane potential exceeds the threshold then trigger a spike.
+      Apply an input current to an RNN hidden state, where the hidden state will multiply with a 8x8 matrix.
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      After reset, the membrane potential will be set to 0.
+      After reset, the hidden state will be set to 0.
 
-      Then change the inputs to change the current. A higher current should
-      trigger a higher firing rate. 
+      Then change the inputs to change the current. You can read the output current to know the result.
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
