@@ -37,7 +37,7 @@ module rnn (
         for (int i = 0; i < 8; i = i + 1) begin
             state_mult_beta = state_mult_beta + state[i] * beta[i];
         end
-        next_state = state_mult_beta + current; // 更新下一个状态
+        next_state = state_mult_beta + current; // update next status.
         out = next_state;
     end
 
